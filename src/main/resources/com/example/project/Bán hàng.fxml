@@ -5,84 +5,89 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="lbData" alignment="CENTER" layoutX="237.0" layoutY="14.0" prefHeight="58.0" prefWidth="126.0" text="Bán hàng">
+      <Label fx:id="lbData" alignment="CENTER" layoutX="387.0" layoutY="18.0" prefHeight="58.0" prefWidth="126.0" text="Bán hàng">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Text layoutX="79.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sản phẩm:" wrappingWidth="101.64569091796875">
+      <Text layoutX="160.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sản phẩm:" wrappingWidth="101.64569091796875">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <SplitMenuButton layoutX="79.0" layoutY="186.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="Sản phẩm">
+      <SplitMenuButton layoutX="160.0" layoutY="185.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="Sản phẩm">
         <items>
           <MenuItem mnemonicParsing="false" text="Món 1" />
           <MenuItem mnemonicParsing="false" text="Món 2" />
         </items>
       </SplitMenuButton>
-      <Text layoutX="315.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số lượng:" wrappingWidth="73.60000000000014">
+      <Text layoutX="476.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số lượng:" wrappingWidth="73.60000000000014">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="442.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đơn giá:" wrappingWidth="102.39999999999986">
+      <Text layoutX="684.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đơn giá:" wrappingWidth="102.39999999999986">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField alignment="CENTER" layoutX="315.0" layoutY="187.0" prefHeight="26.0" prefWidth="73.0" promptText="10" />
-      <TextField alignment="CENTER" layoutX="442.0" layoutY="186.0" prefHeight="26.0" prefWidth="102.0" promptText="10000" />
-      <Text layoutX="21.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành tiền:" wrappingWidth="73.60000000000014">
+      <TextField alignment="CENTER" layoutX="476.0" layoutY="186.0" prefHeight="26.0" prefWidth="73.0" promptText="10" />
+      <TextField alignment="CENTER" layoutX="684.0" layoutY="186.0" prefHeight="26.0" prefWidth="102.0" promptText="10000" />
+      <Text layoutX="57.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành tiền:" wrappingWidth="73.60000000000014">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="22.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STT" textAlignment="CENTER" wrappingWidth="28.799951171875136">
+      <Text layoutX="57.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STT" textAlignment="CENTER" wrappingWidth="28.799951171875136">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField alignment="CENTER" layoutX="21.0" layoutY="186.0" prefHeight="26.0" prefWidth="29.0" promptText="1" />
-      <TextField alignment="CENTER" layoutX="442.0" layoutY="271.0" prefHeight="26.0" prefWidth="102.0" promptText="100000" />
-      <Button layoutX="263.0" layoutY="322.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="74.0" text="NHẬP">
+      <TextField alignment="CENTER" layoutX="56.0" layoutY="185.0" prefHeight="26.0" prefWidth="29.0" promptText="1" />
+      <TextField alignment="CENTER" layoutX="684.0" layoutY="461.0" prefHeight="26.0" prefWidth="102.0" promptText="100000" />
+      <Button alignment="CENTER" layoutX="413.0" layoutY="526.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="74.0" style="-fx-background-color: #4bbad8;" text="NHẬP">
          <font>
             <Font size="18.0" />
          </font>
+         <effect>
+            <DropShadow />
+         </effect>
       </Button>
-      <Text layoutX="22.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày:" wrappingWidth="48.0">
+      <Text layoutX="57.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày:" wrappingWidth="48.0">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="213.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giờ:" wrappingWidth="37.599951171874864">
+      <Text layoutX="387.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giờ:" wrappingWidth="37.599951171874864">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="22.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên nhân viên:" wrappingWidth="101.64569091796875">
+      <Text layoutX="56.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên nhân viên:" wrappingWidth="101.64569091796875">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="73.0" layoutY="72.0" prefHeight="26.0" prefWidth="102.0" promptText="01/01/2024" />
-      <TextField layoutX="249.0" layoutY="72.0" prefHeight="26.0" prefWidth="74.0" promptText="00:01" />
-      <TextField layoutX="130.0" layoutY="117.0" prefHeight="26.0" prefWidth="186.0" promptText="Nguyễn Văn A" />
-      <Text layoutX="548.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VNĐ" textAlignment="CENTER" wrappingWidth="37.599951171874864">
+      <TextField layoutX="108.0" layoutY="71.0" prefHeight="26.0" prefWidth="102.0" promptText="01/01/2024" />
+      <TextField layoutX="423.0" layoutY="70.0" prefHeight="26.0" prefWidth="74.0" promptText="00:01" />
+      <TextField layoutX="164.0" layoutY="120.0" prefHeight="26.0" prefWidth="186.0" promptText="Nguyễn Văn A" />
+      <Text layoutX="790.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VNĐ" textAlignment="CENTER" wrappingWidth="37.599951171874864">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="548.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VNĐ" textAlignment="CENTER" wrappingWidth="37.599951171874864">
+      <Text layoutX="790.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VNĐ" textAlignment="CENTER" wrappingWidth="37.599951171874864">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
+      <Button layoutX="20.0" layoutY="18.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="126.0" text="Quay lại trang chủ" />
    </children>
 </AnchorPane>
