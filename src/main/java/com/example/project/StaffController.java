@@ -64,13 +64,16 @@ public class StaffController implements Initializable {
         String un=uname.getText();
         String p=pass.getText();
         String ep=encryptString(p);
-        String role="Staff";
+        String role="NV";
         PreparedStatement pr= connectionDB.prepareStatement("INSERT INTO nhan_vien(Ten_NV,Ten_DN,Mat_khau,Chuc_vu) value(?,?,?,?)");
         pr.setString(1,n);
         pr.setString(2,un);
         pr.setString(3,ep);
         pr.setString(4,role);
-        boolean execute = pr.execute();
+        pr.execute();
+        staffs.clear();
+        getData();
+        stafftb.setItems(staffs);
     }
 
 
@@ -84,8 +87,15 @@ public class StaffController implements Initializable {
     }
 
     @FXML
-    void deleteStaff(ActionEvent event) {
-
+    void deleteStaff(ActionEvent event) throws SQLException {
+        Staff st= stafftb.getSelectionModel().getSelectedItem();
+        int id=st.getId();
+        PreparedStatement pr=connectionDB.prepareStatement("DELETE FROM nhan_vien where Ma_NV=?");
+        pr.setInt(1,id);
+        pr.execute();
+        staffs.clear();
+        getData();
+        stafftb.setItems(staffs);
     }
 
     public String encryptString (String input) throws NoSuchAlgorithmException {
