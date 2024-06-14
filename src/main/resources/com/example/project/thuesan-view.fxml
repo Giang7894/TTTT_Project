@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
@@ -31,23 +32,24 @@
             <font>
                 <Font size="18.0" />
             </font></Text>
-        <DatePicker fx:id="ngay" layoutX="594.0" layoutY="305.0" />
+        <DatePicker fx:id="date" layoutX="594.0" layoutY="305.0" />
         <Text layoutX="160.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giờ đá">
             <font>
                 <Font size="18.0" />
             </font></Text>
-        <Button layoutX="538.0" layoutY="382.0" mnemonicParsing="false" onMouseClicked="#getDat" style="-fx-background-color: blue;" text="Đặt" textFill="#f7f4f4">
+        <Button layoutX="358.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#getDat" prefHeight="43.0" prefWidth="182.0" style="-fx-background-color: blue;" text="Đặt" textFill="#f7f4f4">
             <font>
-                <Font size="20.0" />
+                <Font name="System Bold" size="20.0" />
             </font></Button>
         <Text layoutX="409.0" layoutY="85.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="ĐẶT SÂN" textAlignment="CENTER">
             <font>
-                <Font size="20.0" />
+                <Font size="27.0" />
             </font>
         </Text>
         <TextField fx:id="name" layoutX="282.0" layoutY="203.0" prefHeight="26.0" prefWidth="150.0" />
         <TextField fx:id="sdt" layoutX="594.0" layoutY="204.0" />
         <TextField fx:id="giodat" layoutX="594.0" layoutY="252.0" />
         <TextField fx:id="gioda" layoutX="282.0" layoutY="305.0" />
+      <FontAwesomeIconView accessibleRole="BUTTON" glyphName="ARROW_LEFT" layoutX="56.0" layoutY="74.0" onMouseClicked="#back" size="30" wrappingWidth="41.9326171875" />
     </children>
 </AnchorPane>

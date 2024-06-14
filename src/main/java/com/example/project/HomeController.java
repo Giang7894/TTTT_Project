@@ -1,4 +1,60 @@
 package com.example.project;
 
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
 public class HomeController {
+
+    @FXML
+    void getDat(MouseEvent event) {
+        Parent root = FXMLLoader.load(getClass().getResource("thuesan-view.fxml"));
+        Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene= new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    void getDv(MouseEvent event) {
+        Parent root = FXMLLoader.load(getClass().getResource("dichvu-view.fxml"));
+        Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene= new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    void getLogout(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+        Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene= new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    void getQlnv(MouseEvent event) {
+        Parent root = FXMLLoader.load(getClass().getResource("home-view.fxml"));
+        Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene= new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    void getQls(MouseEvent event) {
+        Parent root = FXMLLoader.load(getClass().getResource("sanbong-view.fxml"));
+        Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene= new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 }
