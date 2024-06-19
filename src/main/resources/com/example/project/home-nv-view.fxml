@@ -6,14 +6,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.HomeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.HomeNvController">
     <children>
-        <Button layoutX="510.0" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#getDat" style="-fx-background-color: blue;" text="Đặt sân" textFill="WHITE">
+        <Button layoutX="402.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#getDat" style="-fx-background-color: blue;" text="Đặt sân" textFill="WHITE">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button layoutX="510.0" layoutY="396.0" mnemonicParsing="false" onMouseClicked="#getDv" style="-fx-background-color: blue;" text="Dịch vụ" textFill="WHITE">
+        <Button layoutX="566.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#getDv" style="-fx-background-color: blue;" text="Dịch vụ" textFill="WHITE">
             <font>
                 <Font size="20.0" />
             </font>
@@ -22,12 +22,7 @@
             <font>
                 <Font size="20.0" />
             </font></Button>
-        <Button layoutX="287.0" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#getQlnv" style="-fx-background-color: blue;" text="QL.Nhân viên" textFill="WHITE">
-            <font>
-                <Font size="20.0" />
-            </font>
-        </Button>
-        <Button layoutX="315.0" layoutY="396.0" mnemonicParsing="false" onMouseClicked="#getQls" style="-fx-background-color: blue;" text="QL.Sân" textFill="WHITE">
+        <Button layoutX="253.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#getQls" style="-fx-background-color: blue;" text="QL.Sân" textFill="WHITE">
             <font>
                 <Font size="20.0" />
             </font>
@@ -47,10 +42,10 @@
                 <Font name="System Bold" size="14.0" />
             </font>
         </TextArea>
-      <Text layoutX="391.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trang chủ">
-         <font>
-            <Font size="27.0" />
-         </font>
-      </Text>
+        <Text layoutX="391.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trang chủ">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Text>
     </children>
 </AnchorPane>

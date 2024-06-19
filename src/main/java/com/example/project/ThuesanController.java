@@ -5,12 +5,33 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class ThuesanController {
+
+    @FXML
+    private DatePicker date;
+
+    @FXML
+    private TextField gioda;
+
+    @FXML
+    private TextField giodat;
+
+    @FXML
+    private TextField name;
+
+    @FXML
+    private ChoiceBox<?> san;
+
+    @FXML
+    private TextField sdt;
 
     @FXML
     void getDat(MouseEvent event) {

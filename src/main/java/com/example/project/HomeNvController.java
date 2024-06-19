@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HomeController {
+public class HomeNvController {
 
     @FXML
     void getDat(MouseEvent event) throws IOException {
@@ -33,24 +33,6 @@ public class HomeController {
     @FXML
     void getLogout(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
-        Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene= new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    @FXML
-    void getQlnv(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("staff-view.fxml"));
-        Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene= new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    @FXML
-    void getQls(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("sanbong-view.fxml"));
         Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene= new Scene(root);
         stage.setScene(scene);
