@@ -13,7 +13,7 @@ import java.io.IOException;
 public class HomeController {
 
     @FXML
-    void getDat(MouseEvent event) {
+    void getDat(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("thuesan-view.fxml"));
         Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene= new Scene(root);
@@ -22,7 +22,7 @@ public class HomeController {
     }
 
     @FXML
-    void getDv(MouseEvent event) {
+    void getDv(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("dichvu-view.fxml"));
         Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene= new Scene(root);
@@ -40,7 +40,7 @@ public class HomeController {
     }
 
     @FXML
-    void getQlnv(MouseEvent event) {
+    void getQlnv(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("home-view.fxml"));
         Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene= new Scene(root);
@@ -49,7 +49,7 @@ public class HomeController {
     }
 
     @FXML
-    void getQls(MouseEvent event) {
+    void getQls(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("sanbong-view.fxml"));
         Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene= new Scene(root);
