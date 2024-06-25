@@ -21,6 +21,7 @@ import java.net.URL;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.*;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class StaffController implements Initializable {
@@ -79,7 +80,7 @@ public class StaffController implements Initializable {
 
     @FXML
     void back(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("home-view.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("home-view.fxml")));
         Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene= new Scene(root);
         stage.setScene(scene);

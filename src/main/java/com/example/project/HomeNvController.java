@@ -23,7 +23,7 @@ public class HomeNvController {
 
     @FXML
     void getDv(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("dichvu-view.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Bán hàng.fxml"));
         Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene= new Scene(root);
         stage.setScene(scene);
@@ -32,7 +32,7 @@ public class HomeNvController {
 
     @FXML
     void getLogout(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("login-view.fxml"));
         Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene= new Scene(root);
         stage.setScene(scene);
